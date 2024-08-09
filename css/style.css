@@ -11,17 +11,28 @@ body {
   background-color: #f5f7fa;
   color: #333;
 }
-
+.main {
+  background-color: rgba(255, 255, 255, 0.825);
+}
+.copyright {
+  color: gray;
+}
 @media screen and (max-width: 500px) {
- 
+
   .blur-img {
-    background: none !important;
+    background: url(../images/image1.png) no-repeat center center;
+    overflow: hidden;
+    background-size: cover;
+    margin: 0% -2% 0% 0%;
   }
   .header {
-    padding: 6%;
+    padding: 8%;
   }
   .logo {
-    width: 60%;
+    width: 80%;
+  }
+  .heading {
+    padding-top: 14%;
   }
   .main-content h1 {
     margin: 4% 0 2% 6%;
@@ -82,24 +93,30 @@ body {
   .key4 {
     margin-left: -12%;
   }
+
+  .main-content h1 {
+    font-size: 3em;
+  }
+  .keys {
+    padding: 0px 10px;
+  }
+  .footer {
+    margin-left: 2%;
+  }
+  .copyright {
+    padding-bottom: 4%;
+  }
+  .keyrow1 {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (min-width: 501px) {
   
-  .ga-2title {
-    padding-bottom: 20px;
-  }
-  .key-r2 {
-    margin-left: 16%;
-  }
-  .form1 {
-    padding-bottom: 20%;
-  }
   .blur-img {
     margin: -2% 0% 8% 10%;
     background: url(../images/image1.png) no-repeat center left;
     overflow:hidden;
-    /* overflow-y: visible; */
     background-size: contain;
   }
 
@@ -107,22 +124,7 @@ body {
     background: url(../images/Rectangle\ 3.png) no-repeat;
     overflow: visible;
     background-position: 100%;
-    /* z-index: 9999; */
     width: 100%;
-  }
-
-  /* .main {
-    background-image: url(../images/Rectangle\ 3.png);
-    background-repeat: no-repeat;
-    background-position: 100%;
-    z-index: 2;
-    width: 100%;
-    overflow: hidden;
-  margin: 0;
-  } */
-
-  .main {
-    background-color: rgba(255, 255, 255, 0.825);
   }
 
   .header {
@@ -138,16 +140,6 @@ body {
     text-align: center;
     margin: 0%;
   }
-
-  /* .background-image {
-    background-image: url(../images/image1.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    -webkit-filter: blur(8px);
-    filter: blur(8px);
-    overflow: hidden;
-  } */
 
   .main-content {
     flex: 1;
@@ -238,6 +230,22 @@ body {
   .key-features p,
   .why-ga4 p {
     font-size: 1rem;
+  }
+
+  .keys {
+    padding: 0px 14px;
+  }
+  .ga-2title {
+    padding-bottom: 20px;
+  }
+  .key-r2 {
+    margin-left: 16%;
+  }
+  .key-features .keyrow2 {
+    margin-left: 14%;
+  }
+  .form1 {
+    padding-bottom: 20%;
   }
 
   .footer {
